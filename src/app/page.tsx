@@ -3,6 +3,7 @@ import { Hero } from "@/components/fudu/hero";
 import { About } from "@/components/fudu/about";
 import { WhatIsHultPrize } from "@/components/fudu/what-is-hult-prize";
 import { FivePhaseJourney } from "@/components/fudu/five-phase-journey";
+import { HowToParticipate } from "@/components/fudu/how-to-participate";
 import { Timeline } from "@/components/fudu/timeline";
 import { Faq } from "@/components/fudu/faq";
 import { SocialProof } from "@/components/fudu/social-proof";
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <WhatIsHultPrize />
         <FivePhaseJourney />
+        <HowToParticipate />
         <About />
         <Timeline />
         <Faq />
