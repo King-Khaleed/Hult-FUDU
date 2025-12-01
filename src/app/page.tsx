@@ -2,6 +2,7 @@ import { Header } from "@/components/fudu/header";
 import { Hero } from "@/components/fudu/hero";
 import { About } from "@/components/fudu/about";
 import { WhatIsHultPrize } from "@/components/fudu/what-is-hult-prize";
+import { FivePhaseJourney } from "@/components/fudu/five-phase-journey";
 import { Timeline } from "@/components/fudu/timeline";
 import { Faq } from "@/components/fudu/faq";
 import { SocialProof } from "@/components/fudu/social-proof";
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <WhatIsHultPrize />
+        <FivePhaseJourney />
         <About />
         <Timeline />
         <Faq />
