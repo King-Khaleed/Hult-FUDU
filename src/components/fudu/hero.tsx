@@ -20,17 +20,20 @@ export function Hero() {
       )}
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 container px-4 md:px-6">
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
-            Change The World With Your Idea
+            Transform Your Ideas Into $1M Impact
           </h1>
           <p className="mx-auto max-w-[700px] text-lg md:text-xl">
-            Join the Hult Prize FUDU 2026 competition. Develop a social enterprise, compete for $1 million in seed capital, and make a global impact.
+            Join Hult Prize 2026 from Federal University Dutse. Build a business that solves real problems. Change the world. Make $1 Million.
           </p>
-          <div className="space-x-4">
+          <div className="flex flex-col items-center space-y-2">
             <Button asChild size="lg">
-              <Link href="#register">Register Now</Link>
+              <Link href="#register">Start Your Journey</Link>
             </Button>
+             <Link href="#social-proof" className="text-sm underline hover:no-underline">
+                Learn how FUDU students are competing globally
+            </Link>
           </div>
         </div>
       </div>

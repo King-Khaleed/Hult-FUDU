@@ -1,5 +1,6 @@
 import { Trophy } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   return (
@@ -7,10 +8,10 @@ export function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Trophy className="h-6 w-6 text-primary-foreground" />
-            <span className="font-bold sm:inline-block font-headline">
-              FUDU Hult Hub
-            </span>
+            {/* Placeholder for unified logo */}
+            <div className="flex items-center justify-center h-8 w-32 bg-muted rounded-md">
+                <span className="text-xs text-muted-foreground">Logo</span>
+            </div>
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <Link
