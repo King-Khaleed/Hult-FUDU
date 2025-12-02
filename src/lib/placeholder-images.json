@@ -7,24 +7,6 @@
       "imageHint": "students collaborating"
     },
     {
-      "id": "testimonial-avatar-1",
-      "description": "Avatar for Jane Doe",
-      "imageUrl": "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ1Nzk3MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person portrait"
-    },
-    {
-      "id": "testimonial-avatar-2",
-      "description": "Avatar for John Smith",
-      "imageUrl": "https://images.unsplash.com/photo-1607529378676-a20456ee2f6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDU2OTgzMXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person smiling"
-    },
-    {
-      "id": "testimonial-avatar-3",
-      "description": "Avatar for Alex Ray",
-      "imageUrl": "https://images.unsplash.com/photo-1758521540968-3af0cc2074a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdHVkZW50JTIwaGVhZHNob3R8ZW58MHx8fHwxNzY0NjMzMjYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "student headshot"
-    },
-    {
       "id": "project-logo-1",
       "description": "Logo for GreenTech Solutions",
       "imageUrl": "https://images.unsplash.com/photo-1662027057465-bac8ada9a86a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0ZWNoJTIwbG9nb3xlbnwwfHx8fDE3NjQ2MDAyNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -47,30 +29,6 @@
       "description": "Logo for AquaPure",
       "imageUrl": "https://images.unsplash.com/photo-1685901110199-f5faa54a1e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2F0ZXIlMjBsb2dvfGVufDB8fHx8MTc2NDU0NTQ5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "water logo"
-    },
-    {
-      "id": "organizer-avatar-1",
-      "description": "Avatar for Organizer 1",
-      "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ1Nzk3MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person portrait"
-    },
-    {
-      "id": "organizer-avatar-2",
-      "description": "Avatar for Organizer 2",
-      "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ1Nzk3MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person portrait"
-    },
-    {
-      "id": "organizer-avatar-3",
-      "description": "Avatar for Organizer 3",
-      "imageUrl": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0NTc5NzM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person portrait"
-    },
-    {
-      "id": "organizer-avatar-4",
-      "description": "Avatar for Organizer 4",
-      "imageUrl": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0NTc5NzM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "person portrait"
     }
   ]
 }

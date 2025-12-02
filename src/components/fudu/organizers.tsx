@@ -1,9 +1,9 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Reveal } from "@/components/animations/reveal";
 import { Mail } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const teamMembers = [
   {
@@ -12,7 +12,7 @@ const teamMembers = [
     role: "Campus Director",
     bio: "Leading the charge to empower FUDU students to create a better world through social entrepreneurship.",
     email: "ahmedsaleym7@gmail.com",
-    avatarId: "organizer-avatar-1",
+    avatarUrl: "/images/salim-ahmad.jpg",
   },
 ];
 
@@ -33,15 +33,12 @@ export function Organizers() {
         
         <div className="mt-12 grid gap-8 sm:grid-cols-1 lg:grid-cols-1 justify-center">
           {teamMembers.map((member) => {
-            const avatarImage = PlaceHolderImages.find(img => img.id === member.avatarId);
             return (
               <Reveal key={member.id}>
                 <Card className="h-full text-center flex flex-col max-w-sm mx-auto">
                     <CardHeader className="items-center">
                         <Avatar className="h-24 w-24 mb-4">
-                            {avatarImage && (
-                                <AvatarImage src={avatarImage.imageUrl} alt={avatarImage.description} data-ai-hint={avatarImage.imageHint} />
-                            )}
+                            <AvatarImage src={member.avatarUrl} alt={member.name} />
                             <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
                         </Avatar>
                         <CardTitle className="font-headline text-xl">{member.name}</CardTitle>
