@@ -4,41 +4,49 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/animations/reveal";
 import { FileText, LayoutGrid, Video, BookOpen, Lightbulb, Users } from "lucide-react";
 
+const whatsappBaseUrl = "https://wa.me/?text=";
+const whatsappGroupUrl = "https://chat.whatsapp.com/J9zymi7BQNZ2HqRAm2cEHb";
+
 const resources = [
   {
     icon: FileText,
     title: "Pitch Deck Template",
     description: "Download our template with the structure judges want to see",
-    buttonText: "Download (PPT)",
-    href: "#",
+    buttonText: "Get Template",
+    href: `${whatsappBaseUrl}${encodeURIComponent("Hi! I'd like the Pitch Deck Template please.")}`,
+    target: "_blank",
   },
   {
     icon: LayoutGrid,
     title: "Business Model Canvas",
     description: "Fill out this one-pager to map your entire business model",
-    buttonText: "Download (PDF)",
-    href: "#",
+    buttonText: "Get Canvas",
+    href: `${whatsappBaseUrl}${encodeURIComponent("Hi! I'd like the Business Model Canvas please.")}`,
+    target: "_blank",
   },
   {
     icon: Video,
     title: "Pitch Video Guide",
     description: "How to record a compelling 4-minute pitch video that stands out",
-    buttonText: "Watch Guide",
-    href: "#",
+    buttonText: "Get Guide",
+    href: `${whatsappBaseUrl}${encodeURIComponent("Hi! I'd like the Pitch Video Guide please.")}`,
+     target: "_blank",
   },
   {
     icon: BookOpen,
     title: "UN SDGs Explainer",
     description: "Understand the 17 Sustainable Development Goals you'll align with",
-    buttonText: "Learn More",
-    href: "#",
+    buttonText: "Get Explainer",
+    href: `${whatsappBaseUrl}${encodeURIComponent("Hi! I'd like the UN SDGs Explainer please.")}`,
+     target: "_blank",
   },
   {
     icon: Lightbulb,
     title: "Ideation Workbook",
     description: "Step-by-step workbook to validate your problem and solution",
-    buttonText: "Download (PDF)",
-    href: "#",
+    buttonText: "Get Workbook",
+    href: `${whatsappBaseUrl}${encodeURIComponent("Hi! I'd like the Ideation Workbook please.")}`,
+     target: "_blank",
   },
   {
     icon: Users,
@@ -46,8 +54,41 @@ const resources = [
     description: "Watch videos of past Hult Prize winners sharing their journey",
     buttonText: "Watch Now",
     href: "https://www.youtube.com/user/hultprize",
+    target: "_blank",
   },
 ];
+
+const ResourceLink = ({ resource }: { resource: typeof resources[0] }) => {
+  const linkUrl = resource.href.startsWith("https://wa.me") ? `${whatsappGroupUrl}&${resource.href.split('?')[1]}` : resource.href;
+  
+  if (resource.href.startsWith("https://wa.me")) {
+      return (
+          <Button asChild className="mt-6 w-full">
+              <a href={whatsappGroupUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => {
+                  e.preventDefault();
+                  const message = `Hi! I'm interested in the ${resource.title}. Can you please share it in the group?`;
+                  const mobileUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+                  const desktopUrl = `https://web.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+
+                  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                      window.open(mobileUrl, '_blank');
+                  } else {
+                       window.open(whatsappGroupUrl, '_blank');
+                  }
+              }}>
+                {resource.buttonText}
+              </a>
+          </Button>
+      )
+  }
+
+  return (
+    <Button asChild className="mt-6 w-full">
+      <Link href={linkUrl} target={resource.target || "_self"}>{resource.buttonText}</Link>
+    </Button>
+  );
+};
+
 
 export function Resources() {
   return (
@@ -58,7 +99,7 @@ export function Resources() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Resources to Get You Started</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Everything you need to build a winning pitch is right here.
+                Everything you need to build a winning pitch is right here. Join our WhatsApp group to access them.
               </p>
             </div>
           </div>
@@ -75,8 +116,10 @@ export function Resources() {
                 </CardHeader>
                 <CardContent className="flex flex-col flex-grow text-center">
                   <CardDescription className="flex-grow">{resource.description}</CardDescription>
-                  <Button asChild className="mt-6 w-full">
-                    <Link href={resource.href} target={resource.href.startsWith("http") ? "_blank" : "_self"}>{resource.buttonText}</Link>
+                   <Button asChild className="mt-6 w-full">
+                    <Link href={whatsappGroupUrl} target="_blank" rel="noopener noreferrer">
+                      {resource.buttonText}
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>

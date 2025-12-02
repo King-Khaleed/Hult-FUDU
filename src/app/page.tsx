@@ -8,7 +8,6 @@ import { Eligibility } from "@/components/fudu/eligibility";
 import { Timeline } from "@/components/fudu/timeline";
 import { Resources } from "@/components/fudu/resources";
 import { Faq } from "@/components/fudu/faq";
-import { SocialProof } from "@/components/fudu/social-proof";
 import { Registration } from "@/components/fudu/registration";
 import { Organizers } from "@/components/fudu/organizers";
 import { JoinCommunity } from "@/components/fudu/join-community";
@@ -29,7 +28,6 @@ export default function Home() {
         <Timeline />
         <Resources />
         <Faq />
-        <SocialProof />
         <Registration />
         <Organizers />
         <JoinCommunity />

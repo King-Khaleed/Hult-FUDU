@@ -10,7 +10,7 @@ export function WhatsappButton() {
       style={{ backgroundColor: '#25D366' }}
       aria-label="Chat on WhatsApp"
     >
-      <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+      <Link href="https://chat.whatsapp.com/J9zymi7BQNZ2HqRAm2cEHb" target="_blank" rel="noopener noreferrer">
         <WhatsappIcon className="w-8 h-8 text-white" />
       </Link>
     </Button>

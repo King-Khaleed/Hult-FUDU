@@ -24,7 +24,7 @@ const steps = [
   {
     number: "4",
     title: "Register Online",
-    description: "Submit your application through the official Hult Prize portal by [FUDU DEADLINE DATE]. Include all materials and team member details.",
+    description: "Submit your application through the official Hult Prize portal by January 31st, 2026. Include all materials and team member details.",
     icon: ClipboardCheck,
   },
   {

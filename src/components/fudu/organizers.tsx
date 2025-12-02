@@ -8,35 +8,11 @@ import Link from "next/link";
 const teamMembers = [
   {
     id: "organizer-1",
-    name: "[ORGANIZER NAME]",
-    role: "Competition Lead",
-    bio: "[Description of their background and role]",
-    email: "[EMAIL]",
+    name: "Salim Ahmad",
+    role: "Campus Director",
+    bio: "Leading the charge to empower FUDU students to create a better world through social entrepreneurship.",
+    email: "ahmedsaleym7@gmail.com",
     avatarId: "organizer-avatar-1",
-  },
-  {
-    id: "organizer-2",
-    name: "[ORGANIZER NAME]",
-    role: "Registration & Logistics",
-    bio: "[Description]",
-    email: "[EMAIL]",
-    avatarId: "organizer-avatar-2",
-  },
-  {
-    id: "organizer-3",
-    name: "[ORGANIZER NAME]",
-    role: "Mentorship & Resources",
-    bio: "[Description]",
-    email: "[EMAIL]",
-    avatarId: "organizer-avatar-3",
-  },
-  {
-    id: "organizer-4",
-    name: "[ORGANIZER NAME]",
-    role: "Community Manager",
-    bio: "[Description]",
-    email: "[EMAIL]",
-    avatarId: "organizer-avatar-4",
   },
 ];
 
@@ -55,12 +31,12 @@ export function Organizers() {
           </div>
         </Reveal>
         
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-8 sm:grid-cols-1 lg:grid-cols-1 justify-center">
           {teamMembers.map((member) => {
             const avatarImage = PlaceHolderImages.find(img => img.id === member.avatarId);
             return (
               <Reveal key={member.id}>
-                <Card className="h-full text-center flex flex-col">
+                <Card className="h-full text-center flex flex-col max-w-sm mx-auto">
                     <CardHeader className="items-center">
                         <Avatar className="h-24 w-24 mb-4">
                             {avatarImage && (

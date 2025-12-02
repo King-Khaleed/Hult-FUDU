@@ -16,7 +16,7 @@ const phases = [
     icon: Target,
     description:
       "Campus competition at FUDU. Submit your 1-pager, pitch deck, and video. Top teams advance to Nationals.",
-    deadline: "FUDU Deadline: TBD",
+    deadline: "FUDU Deadline: January 31st, 2026",
   },
   {
     phase: 2,

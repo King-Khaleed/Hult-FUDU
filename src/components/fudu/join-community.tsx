@@ -44,7 +44,7 @@ export function JoinCommunity() {
 
             <div className="mt-10 flex flex-col items-center gap-4">
               <Button asChild size="lg" className="h-14 px-10 text-lg" style={{ backgroundColor: '#25D366', color: 'white' }}>
-                <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                <Link href="https://chat.whatsapp.com/J9zymi7BQNZ2HqRAm2cEHb" target="_blank" rel="noopener noreferrer">
                   <WhatsappIcon className="w-6 h-6 mr-3" />
                   Join Our WhatsApp Community
                 </Link>

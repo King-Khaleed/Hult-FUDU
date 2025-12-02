@@ -11,7 +11,6 @@ const quickLinks = [
 
 const aboutLinks = [
   { text: "The Competition", href: "#what-is" },
-  { text: "Past Winners", href: "#social-proof" },
   { text: "Organizing Committee", href: "#organizers" },
   { text: "Join WhatsApp", href: "#join-community" },
 ];
@@ -83,13 +82,13 @@ export function Footer() {
                     <h3 className="text-sm font-semibold tracking-wider uppercase text-slate-400 mb-4">Contact</h3>
                      <ul className="space-y-3">
                         <li>
-                            <Link href="mailto:[YOUR COMMITTEE EMAIL]" className="flex items-center gap-2 text-sm hover:text-white transition-colors">
+                            <Link href="mailto:ahmedsaleym7@gmail.com" className="flex items-center gap-2 text-sm hover:text-white transition-colors">
                                 <Mail className="h-4 w-4" />
                                 <span>Email</span>
                             </Link>
                         </li>
                         <li>
-                           <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-white transition-colors">
+                           <Link href="https://chat.whatsapp.com/J9zymi7BQNZ2HqRAm2cEHb" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-white transition-colors">
                                 <WhatsappIcon className="h-4 w-4" />
                                 <span>WhatsApp</span>
                             </Link>

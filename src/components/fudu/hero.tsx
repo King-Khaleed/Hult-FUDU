@@ -31,9 +31,9 @@ export function Hero() {
             <Button asChild size="lg">
               <Link href="#register">Start Your Journey</Link>
             </Button>
-             <Link href="#social-proof" className="text-sm underline hover:no-underline">
+             <p className="text-sm">
                 Learn how FUDU students are competing globally
-            </Link>
+            </p>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: "When is the FUDU application deadline?",
-    answer: "[TO BE UPDATED WITH YOUR SPECIFIC DATE]",
+    answer: "The application deadline is January 31st, 2026.",
   },
   {
     question: "Can I apply as an individual?",
@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     question: "Can we get mentorship before applying?",
-    answer: "Yes! The organizing committee is available for 1-on-1 guidance. DM them in the WhatsApp group or email [ORGANIZING COMMITTEE EMAIL].",
+    answer: "Yes! The organizing committee is available for 1-on-1 guidance. DM them in the WhatsApp group or email ahmedsaleym7@gmail.com.",
   },
   {
     question: "Where do I get templates and resources?",

@@ -27,6 +27,7 @@ const formSchema = z.object({
 
 export function Registration() {
   const { toast } = useToast();
+  const organizerEmail = "ahmedsaleym7@gmail.com";
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -39,12 +40,23 @@ export function Registration() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    const subject = `New Hult Prize FUDU Registration: ${values.teamName}`;
+    const body = `
+      A new team has registered for the Hult Prize FUDU competition.
+
+      Team Name: ${values.teamName}
+      Team Leader: ${values.leaderName}
+      Leader's Email: ${values.leaderEmail}
+      Other Team Members: ${values.teamMembers}
+    `;
+    const mailtoLink = `mailto:${organizerEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+
     toast({
-      title: "Registration Successful!",
-      description: `Thank you, ${values.leaderName}. Your team '${values.teamName}' has been registered.`,
+      title: "Opening Email Client...",
+      description: `Please send the pre-filled email to complete your registration for team '${values.teamName}'.`,
     });
-    form.reset();
   }
 
   return (
