@@ -26,6 +26,12 @@ export function Header() {
             >
               Timeline
             </Link>
+             <Link
+              href="#resources"
+              className="text-foreground/60 transition-colors hover:text-foreground/80"
+            >
+              Resources
+            </Link>
             <Link
               href="#faq"
               className="text-foreground/60 transition-colors hover:text-foreground/80"

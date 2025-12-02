@@ -6,6 +6,7 @@ import { FivePhaseJourney } from "@/components/fudu/five-phase-journey";
 import { HowToParticipate } from "@/components/fudu/how-to-participate";
 import { Eligibility } from "@/components/fudu/eligibility";
 import { Timeline } from "@/components/fudu/timeline";
+import { Resources } from "@/components/fudu/resources";
 import { Faq } from "@/components/fudu/faq";
 import { SocialProof } from "@/components/fudu/social-proof";
 import { Registration } from "@/components/fudu/registration";
@@ -24,6 +25,7 @@ export default function Home() {
         <Eligibility />
         <About />
         <Timeline />
+        <Resources />
         <Faq />
         <SocialProof />
         <Registration />
