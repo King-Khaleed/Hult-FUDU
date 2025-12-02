@@ -50,13 +50,13 @@ export function Timeline() {
                 <div className="flex items-center">
                   <div className={`flex-1 ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"}`}>
                     <div className="p-4 rounded-lg bg-card shadow-md">
-                      <p className="font-bold font-headline">{event.title}</p>
+                      <p className="font-bold font-headline text-primary">{event.title}</p>
                       <p className="text-sm text-muted-foreground">{event.date}</p>
                       <p className="text-sm mt-2">{event.description}</p>
                     </div>
                   </div>
-                  <div className="absolute left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-2 border-border">
-                    <event.icon className="w-6 h-6 text-primary-foreground" />
+                  <div className="absolute left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-2 border-primary">
+                    <event.icon className="w-6 h-6 text-primary" />
                   </div>
                    <div className="flex-1"></div>
                 </div>

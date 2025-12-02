@@ -62,7 +62,7 @@ export function WhatIsHultPrize() {
                 <div className="mx-auto grid max-w-5xl items-stretch gap-6 py-12 sm:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:max-w-none">
                     {stats.map((stat) => (
                         <Card key={stat.label} className="flex flex-col items-center justify-center p-6 text-center">
-                            <stat.icon className="h-10 w-10 text-primary-foreground mb-4" />
+                            <stat.icon className="h-10 w-10 text-primary mb-4" />
                             <h3 className="text-3xl font-bold font-headline">{stat.value}</h3>
                             <p className="text-sm text-muted-foreground">{stat.label}</p>
                         </Card>
@@ -78,7 +78,7 @@ export function WhatIsHultPrize() {
                             <Card className="h-full bg-accent/30 border-0">
                                 <CardHeader className="flex flex-col items-center text-center">
                                     <div className="bg-primary/20 p-4 rounded-full mb-4">
-                                        <benefit.icon className="h-8 w-8 text-primary-foreground" />
+                                        <benefit.icon className="h-8 w-8 text-primary" />
                                     </div>
                                     <CardTitle className="font-headline">{benefit.title}</CardTitle>
                                 </CardHeader>

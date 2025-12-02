@@ -76,11 +76,11 @@ export function FivePhaseJourney() {
             <div className="relative flex justify-between">
               {phases.map((phase, index) => (
                 <div key={index} className="group relative flex flex-col items-center w-1/5">
-                  <div className="absolute top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background border-2 border-border flex items-center justify-center transition-all duration-300 group-hover:border-primary group-hover:scale-110">
+                  <div className="absolute top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-primary border-2 border-primary flex items-center justify-center transition-all duration-300 group-hover:border-primary group-hover:scale-110">
                     <phase.icon className="w-4 h-4 text-primary-foreground" />
                   </div>
                   <div className="mt-12 text-center transition-transform duration-300 group-hover:-translate-y-2">
-                    <h3 className="font-bold text-sm uppercase tracking-wider text-primary-foreground">{`Phase ${phase.phase}`}</h3>
+                    <h3 className="font-bold text-sm uppercase tracking-wider text-primary">{`Phase ${phase.phase}`}</h3>
                     <p className="font-headline text-lg">{phase.title}</p>
                     <p className="text-xs text-muted-foreground">{phase.date}</p>
                   </div>
@@ -100,13 +100,13 @@ export function FivePhaseJourney() {
               {phases.map((phase, index) => (
                 <Reveal key={index}>
                     <div className="relative pl-16 mb-10">
-                         <div className="absolute left-6 -translate-x-1/2 top-1 w-8 h-8 rounded-full bg-background border-2 border-border flex items-center justify-center">
+                         <div className="absolute left-6 -translate-x-1/2 top-1 w-8 h-8 rounded-full bg-primary border-2 border-primary flex items-center justify-center">
                             <phase.icon className="w-4 h-4 text-primary-foreground" />
                         </div>
                         <Card>
                             <CardHeader>
                                 <CardTitle className="text-lg">
-                                    <span className="text-primary-foreground font-bold uppercase text-sm tracking-wider mr-2">{`Phase ${phase.phase}:`}</span>
+                                    <span className="text-primary font-bold uppercase text-sm tracking-wider mr-2">{`Phase ${phase.phase}:`}</span>
                                     {phase.title}
                                 </CardTitle>
                                 <CardDescription>{phase.date}</CardDescription>

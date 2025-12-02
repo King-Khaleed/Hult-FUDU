@@ -54,12 +54,12 @@ export function HowToParticipate() {
             <Reveal key={step.number}>
               <Card className="flex flex-col md:flex-row items-start overflow-hidden">
                 <div className="flex items-center justify-center bg-accent/50 p-6 md:p-8">
-                  <span className="text-5xl font-bold text-primary-foreground/50">{step.number}</span>
+                  <span className="text-5xl font-bold text-primary/50">{step.number}</span>
                 </div>
                 <div className="flex-1">
                   <CardHeader className="flex flex-row items-center gap-4 space-y-0 pb-2">
                      <div className="bg-primary/20 p-3 rounded-full">
-                        <step.icon className="h-6 w-6 text-primary-foreground" />
+                        <step.icon className="h-6 w-6 text-primary" />
                     </div>
                     <CardTitle className="font-headline text-2xl">{step.title}</CardTitle>
                   </CardHeader>
