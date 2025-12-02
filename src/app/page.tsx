@@ -11,6 +11,7 @@ import { Faq } from "@/components/fudu/faq";
 import { SocialProof } from "@/components/fudu/social-proof";
 import { Registration } from "@/components/fudu/registration";
 import { Organizers } from "@/components/fudu/organizers";
+import { JoinCommunity } from "@/components/fudu/join-community";
 import { Footer } from "@/components/fudu/footer";
 import { WhatsappButton } from "@/components/fudu/whatsapp-button";
 
@@ -31,6 +32,7 @@ export default function Home() {
         <SocialProof />
         <Registration />
         <Organizers />
+        <JoinCommunity />
       </main>
       <Footer />
       <WhatsappButton />
