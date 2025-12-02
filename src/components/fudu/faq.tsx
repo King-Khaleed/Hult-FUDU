@@ -8,24 +8,44 @@ import { Reveal } from "@/components/animations/reveal";
 
 const faqs = [
   {
-    question: "Who is eligible to participate?",
-    answer: "The Hult Prize is open to all current students (undergraduate, graduate, or PhD) from any university in the world. You must form a team of 3-4 students from the same university.",
+    question: "Can students from different departments team up?",
+    answer: "Yes! Your team can include students from any FUDU department. You just need to register through FUDU as your representing institution.",
   },
   {
-    question: "What is the Hult Prize 2026 Challenge?",
-    answer: "The specific challenge for 2026 has not been announced yet. It will be revealed in late 2025. Typically, it addresses a major global issue in areas like education, health, or sustainability.",
+    question: "Do we need a fully built product to apply?",
+    answer: "No. You can apply with just a business idea, prototype, or MVP. The Hult Prize judges want to see your problem-solving approach, not a finished product.",
   },
   {
-    question: "Do I need a fully developed business idea to register?",
-    answer: "No, you don't need a perfect idea to start. The Hult Prize journey is designed to help you develop and refine your concept with a team. Enthusiasm and a passion for social change are the most important ingredients.",
+    question: "What if we've already started a business?",
+    answer: "You're welcome to apply! Even if you've raised money or launched, you remain eligible as long as team members are current FUDU students.",
   },
   {
-    question: "How are the teams judged?",
-    answer: "Teams are judged on a variety of criteria, including the viability of their business model, its potential for social impact, scalability, and the team's strength and cohesion.",
+    question: "When is the FUDU application deadline?",
+    answer: "[TO BE UPDATED WITH YOUR SPECIFIC DATE]",
   },
   {
-    question: "What support is available for participants?",
-    answer: "Participants in the on-campus program at FUDU will have access to workshops, mentorship from faculty and local entrepreneurs, and networking events to help them build a strong foundation for their social enterprise.",
+    question: "Can I apply as an individual?",
+    answer: "No, you must form a team of 2-4 people. This is intentional - it teaches you to collaborate and build diverse teams.",
+  },
+  {
+    question: "How are teams judged?",
+    answer: "Judges evaluate on: problem impact, business viability, scalability, innovation, and team capability. You'll need a strong pitch deck and video explaining your idea.",
+  },
+  {
+    question: "Is there a cost to participate?",
+    answer: "No, it's completely free. Registration, mentorship, and training are all included.",
+  },
+  {
+    question: "What if we don't have a business background?",
+    answer: "Perfect! Hult Prize is designed for students from all backgrounds. You'll get mentorship and resources to learn as you go.",
+  },
+  {
+    question: "Can we get mentorship before applying?",
+    answer: "Yes! The organizing committee is available for 1-on-1 guidance. DM them in the WhatsApp group or email [ORGANIZING COMMITTEE EMAIL].",
+  },
+  {
+    question: "Where do I get templates and resources?",
+    answer: "All resources (pitch templates, business model canvas, video tips) are available in the WhatsApp group and on this page.",
   },
 ];
 
