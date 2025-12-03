@@ -15,7 +15,7 @@ const teamMembers = [
     role: "Campus Director",
     bio: "Leading the charge to empower FUDU students to create a better world through social entrepreneurship. Salim is dedicated to fostering innovation and guiding teams to unlock their full potential.",
     email: "ahmedsaleym7@gmail.com",
-    avatarUrl: "/images/salim-ahmad.jpg",
+    avatarUrl: "/images/salim-ahmad.jpeg",
     socials: {
         linkedin: "https://linkedin.com/in/salim-ahmad",
         twitter: "https://twitter.com/salim_ahmad"
@@ -27,7 +27,7 @@ const teamMembers = [
     role: "Deputy Campus Director",
     bio: "Supporting the team and helping students navigate the competition process. Khadijah ensures smooth operations and provides crucial assistance to all participants.",
     email: "khadijah.ibrahim@example.com",
-    avatarUrl: "/images/khadijah-ibrahim.jpg",
+    avatarUrl: "/images/khadijah-ibrahim.jpeg",
      socials: {
         linkedin: "#",
         twitter: "#"
@@ -39,7 +39,7 @@ const teamMembers = [
     role: "Experts & Judges Support Team",
     bio: "Connecting teams with mentors and managing our panel of esteemed judges. Khalid plays a key role in bringing valuable industry expertise to the FUDU Hult Prize community.",
     email: "khalid.murtala@example.com",
-    avatarUrl: "/images/khalid-murtala.jpg",
+    avatarUrl: "/images/khalid-murtala.jpeg",
      socials: {
         linkedin: "#",
         twitter: "#"
