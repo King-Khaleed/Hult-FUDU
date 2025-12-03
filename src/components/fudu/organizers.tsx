@@ -3,8 +3,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Reveal } from "@/components/animations/reveal";
-import { Mail, Linkedin, Twitter, Eye } from "lucide-react";
-import Link from "next/link";
+import { Eye } from "lucide-react";
 import { useState } from "react";
 import { MemberDialog } from "./member-dialog";
 import { Button } from "@/components/ui/button";
@@ -28,7 +27,7 @@ const teamMembers = [
     role: "Deputy Campus Director",
     bio: "Supporting the team and helping students navigate the competition process. Khadijah ensures smooth operations and provides crucial assistance to all participants.",
     email: "khadijah.ibrahim@example.com",
-    avatarUrl: "",
+    avatarUrl: "/images/khadijah-ibrahim.jpg",
      socials: {
         linkedin: "#",
         twitter: "#"
@@ -40,7 +39,7 @@ const teamMembers = [
     role: "Experts & Judges Support Team",
     bio: "Connecting teams with mentors and managing our panel of esteemed judges. Khalid plays a key role in bringing valuable industry expertise to the FUDU Hult Prize community.",
     email: "khalid.murtala@example.com",
-    avatarUrl: "",
+    avatarUrl: "/images/khalid-murtala.jpg",
      socials: {
         linkedin: "#",
         twitter: "#"
