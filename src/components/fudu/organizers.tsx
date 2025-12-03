@@ -38,11 +38,11 @@ const teamMembers = [
     name: "Khalid Murtala",
     role: "Experts & Judges Support Team",
     bio: "Connecting teams with mentors and managing our panel of esteemed judges. Khalid plays a key role in bringing valuable industry expertise to the FUDU Hult Prize community.",
-    email: "khalid.murtala@example.com",
+    email: "murtalakhalid12@gmail.com",
     avatarUrl: "/images/khalid-murtala.jpeg",
      socials: {
-        linkedin: "#",
-        twitter: "#"
+        linkedin: "https://www.linkedin.com/in/khalid-murtala",
+        twitter: "https://twitter.com/khalidx_dev"
     }
   },
 ];
