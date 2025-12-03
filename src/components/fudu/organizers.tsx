@@ -1,38 +1,56 @@
+"use client";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Reveal } from "@/components/animations/reveal";
-import { Mail } from "lucide-react";
+import { Mail, Linkedin, Twitter, Eye } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import { useState } from "react";
+import { MemberDialog } from "./member-dialog";
+import { Button } from "@/components/ui/button";
 
 const teamMembers = [
   {
     id: "organizer-1",
     name: "Salim Ahmad",
     role: "Campus Director",
-    bio: "Leading the charge to empower FUDU students to create a better world through social entrepreneurship.",
+    bio: "Leading the charge to empower FUDU students to create a better world through social entrepreneurship. Salim is dedicated to fostering innovation and guiding teams to unlock their full potential.",
     email: "ahmedsaleym7@gmail.com",
     avatarUrl: "/images/salim-ahmad.jpg",
+    socials: {
+        linkedin: "https://linkedin.com/in/salim-ahmad",
+        twitter: "https://twitter.com/salim_ahmad"
+    }
   },
   {
     id: "organizer-2",
     name: "Khadijah Ibrahim",
     role: "Deputy Campus Director",
-    bio: "Supporting the team and helping students navigate the competition process.",
+    bio: "Supporting the team and helping students navigate the competition process. Khadijah ensures smooth operations and provides crucial assistance to all participants.",
     email: "khadijah.ibrahim@example.com",
     avatarUrl: "",
+     socials: {
+        linkedin: "#",
+        twitter: "#"
+    }
   },
   {
     id: "organizer-3",
     name: "Khalid Murtala",
     role: "Experts & Judges Support Team",
-    bio: "Connecting teams with mentors and managing our panel of esteemed judges.",
+    bio: "Connecting teams with mentors and managing our panel of esteemed judges. Khalid plays a key role in bringing valuable industry expertise to the FUDU Hult Prize community.",
     email: "khalid.murtala@example.com",
     avatarUrl: "",
+     socials: {
+        linkedin: "#",
+        twitter: "#"
+    }
   },
 ];
 
 export function Organizers() {
+  const [selectedMember, setSelectedMember] = useState(null);
+
   return (
     <section id="organizers" className="w-full py-12 md:py-24 lg:py-32 bg-accent/50">
       <div className="container px-4 md:px-6">
@@ -60,20 +78,32 @@ export function Organizers() {
                         <CardTitle className="font-headline text-xl">{member.name}</CardTitle>
                         <p className="text-sm text-primary font-semibold">{member.role}</p>
                     </CardHeader>
-                    <CardContent className="flex flex-col flex-grow">
-                        <p className="text-muted-foreground flex-grow">{member.bio}</p>
-                        <div className="mt-4">
-                            <Link href={`mailto:${member.email}`} className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
-                                <Mail className="h-4 w-4" />
-                                <span>Contact</span>
-                            </Link>
-                        </div>
+                    <CardContent className="flex flex-col flex-grow items-center">
+                        <p className="text-muted-foreground flex-grow px-4 text-sm">
+                            {member.bio.split('. ')[0] + '.'}
+                        </p>
+                        <Button 
+                            variant="outline" 
+                            className="mt-6"
+                            onClick={() => setSelectedMember(member as any)}
+                        >
+                            <Eye className="mr-2 h-4 w-4" />
+                            View Full Bio
+                        </Button>
                     </CardContent>
                 </Card>
               </Reveal>
             );
           })}
         </div>
+        
+        {selectedMember && (
+          <MemberDialog 
+            member={selectedMember} 
+            isOpen={!!selectedMember}
+            onClose={() => setSelectedMember(null)} 
+          />
+        )}
 
         <Reveal>
           <p className="mt-12 text-center text-lg text-muted-foreground">
