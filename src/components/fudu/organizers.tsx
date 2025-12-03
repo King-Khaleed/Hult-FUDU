@@ -14,6 +14,22 @@ const teamMembers = [
     email: "ahmedsaleym7@gmail.com",
     avatarUrl: "/images/salim-ahmad.jpg",
   },
+  {
+    id: "organizer-2",
+    name: "Khadijah Ibrahim",
+    role: "Deputy Campus Director",
+    bio: "Supporting the team and helping students navigate the competition process.",
+    email: "khadijah.ibrahim@example.com",
+    avatarUrl: "",
+  },
+  {
+    id: "organizer-3",
+    name: "Khalid Murtala",
+    role: "Experts & Judges Support Team",
+    bio: "Connecting teams with mentors and managing our panel of esteemed judges.",
+    email: "khalid.murtala@example.com",
+    avatarUrl: "",
+  },
 ];
 
 export function Organizers() {
@@ -31,7 +47,7 @@ export function Organizers() {
           </div>
         </Reveal>
         
-        <div className="mt-12 grid gap-8 sm:grid-cols-1 lg:grid-cols-1 justify-center">
+        <div className="mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
           {teamMembers.map((member) => {
             return (
               <Reveal key={member.id}>
@@ -39,10 +55,10 @@ export function Organizers() {
                     <CardHeader className="items-center">
                         <Avatar className="h-24 w-24 mb-4">
                             <AvatarImage src={member.avatarUrl} alt={member.name} />
-                            <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
+                            <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                         </Avatar>
                         <CardTitle className="font-headline text-xl">{member.name}</CardTitle>
-                        <p className="text-sm text-primary-foreground font-semibold">{member.role}</p>
+                        <p className="text-sm text-primary font-semibold">{member.role}</p>
                     </CardHeader>
                     <CardContent className="flex flex-col flex-grow">
                         <p className="text-muted-foreground flex-grow">{member.bio}</p>
