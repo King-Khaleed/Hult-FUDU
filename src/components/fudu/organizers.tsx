@@ -17,8 +17,8 @@ const teamMembers = [
     email: "ahmedsaleym7@gmail.com",
     avatarUrl: "/images/salim-ahmad.jpeg",
     socials: {
-        linkedin: "https://linkedin.com/in/salim-ahmad",
-        twitter: "https://twitter.com/salim_ahmad"
+        linkedin: "https://www.linkedin.com/in/salimahmad-sag?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+        twitter: "https://x.com/sirbenzg?s=11"
     }
   },
   {
