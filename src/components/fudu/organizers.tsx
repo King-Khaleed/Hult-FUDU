@@ -29,8 +29,8 @@ const teamMembers = [
     email: "khadijah.ibrahim@example.com",
     avatarUrl: "/images/khadijah-ibrahim.jpeg",
      socials: {
-        linkedin: "#",
-        twitter: "#"
+        linkedin: "https://www.linkedin.com/in/khadija-ibrahim-78114b274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        twitter: ""
     }
   },
   {

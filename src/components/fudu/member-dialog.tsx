@@ -47,24 +47,30 @@ export function MemberDialog({ member, isOpen, onClose }: MemberDialogProps) {
           <p className="text-sm text-center text-muted-foreground">{member.bio}</p>
         </div>
         <div className="flex justify-center gap-4">
-            <Button variant="outline" size="icon" asChild>
-                <Link href={`mailto:${member.email}`}>
-                    <Mail className="h-4 w-4" />
-                    <span className="sr-only">Email</span>
-                </Link>
-            </Button>
-             <Button variant="outline" size="icon" asChild>
-                <Link href={member.socials.linkedin} target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="h-4 w-4" />
-                    <span className="sr-only">LinkedIn</span>
-                </Link>
-            </Button>
-             <Button variant="outline" size="icon" asChild>
-                <Link href={member.socials.twitter} target="_blank" rel="noopener noreferrer">
-                    <Twitter className="h-4 w-4" />
-                    <span className="sr-only">Twitter</span>
-                </Link>
-            </Button>
+            {member.email && (
+              <Button variant="outline" size="icon" asChild>
+                  <Link href={`mailto:${member.email}`}>
+                      <Mail className="h-4 w-4" />
+                      <span className="sr-only">Email</span>
+                  </Link>
+              </Button>
+            )}
+             {member.socials.linkedin && (
+                <Button variant="outline" size="icon" asChild>
+                    <Link href={member.socials.linkedin} target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="h-4 w-4" />
+                        <span className="sr-only">LinkedIn</span>
+                    </Link>
+                </Button>
+             )}
+             {member.socials.twitter && (
+                <Button variant="outline" size="icon" asChild>
+                    <Link href={member.socials.twitter} target="_blank" rel="noopener noreferrer">
+                        <Twitter className="h-4 w-4" />
+                        <span className="sr-only">Twitter</span>
+                    </Link>
+                </Button>
+             )}
         </div>
       </DialogContent>
     </Dialog>
