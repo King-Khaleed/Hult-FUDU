@@ -6,7 +6,7 @@ const steps = [
   {
     number: "1",
     title: "Form Your Team",
-    description: "Gather 2-4 students from FUDU. Choose your co-founders based on complementary skills (tech, business, design, etc.)",
+    description: "Gather 2-4 students from FUD. Choose your co-founders based on complementary skills (tech, business, design, etc.)",
     icon: Users,
   },
   {
@@ -30,7 +30,7 @@ const steps = [
   {
     number: "5",
     title: "Compete & Win",
-    description: "Pitch to FUDU judges, advance through 5 phases, and compete for $1M funding. Along the way, get mentorship and join a global community.",
+    description: "Pitch to FUD judges, advance through 5 phases, and compete for $1M funding. Along the way, get mentorship and join a global community.",
     icon: Trophy,
   },
 ];
@@ -42,7 +42,7 @@ export function HowToParticipate() {
         <Reveal>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">How FUDU Students Participate</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">How FUD Students Participate</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Follow these 5 steps to start your journey from campus to the global stage.
               </p>

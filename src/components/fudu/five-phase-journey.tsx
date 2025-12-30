@@ -15,8 +15,8 @@ const phases = [
     date: "Sept 2025 - Feb 2026",
     icon: Target,
     description:
-      "Campus competition at FUDU. Submit your 1-pager, pitch deck, and video. Top teams advance to Nationals.",
-    deadline: "FUDU Deadline: January 31st, 2026",
+      "Campus competition at FUD. Submit your 1-pager, pitch deck, and video. Top teams advance to Nationals.",
+    deadline: "FUD Deadline: January 31st, 2026",
   },
   {
     phase: 2,
@@ -54,7 +54,7 @@ const phases = [
 
 export function FivePhaseJourney() {
   return (
-    <section id="journey" className="w-full py-12 md:py-24 lg:py-32 bg-accent/50">
+    <section id="journey" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <Reveal>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">

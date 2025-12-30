@@ -13,7 +13,7 @@ const teamMembers = [
     id: "organizer-1",
     name: "Salim Ahmad",
     role: "Campus Director",
-    bio: "Leading the charge to empower FUDU students to create a better world through social entrepreneurship. Salim is dedicated to fostering innovation and guiding teams to unlock their full potential.",
+    bio: "Leading the charge to empower FUD students to create a better world through social entrepreneurship. Salim is dedicated to fostering innovation and guiding teams to unlock their full potential.",
     email: "ahmedsaleym7@gmail.com",
     avatarUrl: "/images/salim-ahmad.jpeg",
     socials: {
@@ -37,7 +37,7 @@ const teamMembers = [
     id: "organizer-3",
     name: "Khalid Murtala",
     role: "Experts & Judges Support Team",
-    bio: "Connecting teams with mentors and managing our panel of esteemed judges. Khalid plays a key role in bringing valuable industry expertise to the FUDU Hult Prize community.",
+    bio: "Connecting teams with mentors and managing our panel of esteemed judges. Khalid plays a key role in bringing valuable industry expertise to the FUD Hult Prize community.",
     email: "murtalakhalid12@gmail.com",
     avatarUrl: "/images/khalid-murtala.jpeg",
      socials: {
@@ -56,7 +56,7 @@ export function Organizers() {
         <Reveal>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Meet Your FUDU Hult Prize Team</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Meet Your FUD Hult Prize Team</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 The passionate individuals dedicated to guiding you on your journey to impact.
               </p>

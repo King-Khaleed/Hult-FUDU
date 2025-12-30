@@ -9,7 +9,7 @@ import { Reveal } from "@/components/animations/reveal";
 const faqs = [
   {
     question: "Can students from different departments team up?",
-    answer: "Yes! Your team can include students from any FUDU department. You just need to register through FUDU as your representing institution.",
+    answer: "Yes! Your team can include students from any FUD department. You just need to register through FUD as your representing institution.",
   },
   {
     question: "Do we need a fully built product to apply?",
@@ -17,10 +17,10 @@ const faqs = [
   },
   {
     question: "What if we've already started a business?",
-    answer: "You're welcome to apply! Even if you've raised money or launched, you remain eligible as long as team members are current FUDU students.",
+    answer: "You're welcome to apply! Even if you've raised money or launched, you remain eligible as long as team members are current FUD students.",
   },
   {
-    question: "When is the FUDU application deadline?",
+    question: "When is the FUD application deadline?",
     answer: "The application deadline is January 31st, 2026.",
   },
   {

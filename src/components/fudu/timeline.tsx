@@ -6,7 +6,7 @@ const timelineEvents = [
     icon: CalendarDays,
     date: "September 2025",
     title: "Registration Opens",
-    description: "Form your teams and sign up to participate in the FUDU on-campus program.",
+    description: "Form your teams and sign up to participate in the FUD on-campus program.",
   },
   {
     icon: Flag,
@@ -37,7 +37,7 @@ export function Timeline() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Competition Timeline</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Key dates and milestones for the Hult Prize FUDU 2026 journey. Don't miss out!
+                Key dates and milestones for the Hult Prize FUD 2026 journey. Don't miss out!
               </p>
             </div>
           </div>

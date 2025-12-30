@@ -22,7 +22,7 @@ export function Registration() {
         <Reveal>
           <Card className="max-w-2xl mx-auto">
             <CardHeader className="text-center">
-              <CardTitle className="text-3xl font-bold font-headline">Register for Hult Prize FUDU 2026</CardTitle>
+              <CardTitle className="text-3xl font-bold font-headline">Register for Hult Prize FUD 2026</CardTitle>
               <CardDescription>
                 Click the button below to go to the official Hult Prize registration portal. Make sure to select "Federal University Dutse" as your campus.
               </CardDescription>

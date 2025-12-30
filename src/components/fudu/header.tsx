@@ -7,7 +7,7 @@ export function Header() {
       <div className="container flex h-17 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Image src="/images/fudu-hult-logo.png" alt="FUDU Hult Prize Logo" width={70} height={15} />
+            <Image src="/images/fudu-hult-logo.png" alt="FUD Hult Prize Logo" width={70} height={15} />
           </Link>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <Link

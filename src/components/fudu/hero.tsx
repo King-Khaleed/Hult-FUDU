@@ -32,7 +32,7 @@ export function Hero() {
               <Link href="#register">Start Your Journey</Link>
             </Button>
              <p className="text-sm">
-                Learn how FUDU students are competing globally
+                Learn how FUD students are competing globally
             </p>
           </div>
         </div>

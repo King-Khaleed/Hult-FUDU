@@ -31,7 +31,7 @@ export function Footer() {
             <div className="lg:col-span-4">
                 <div className="flex items-center gap-2 mb-4">
                     <Trophy className="h-8 w-8 text-primary" />
-                    <span className="text-xl font-bold">FUDU Hult Hub</span>
+                    <span className="text-xl font-bold">FUD Hult Hub</span>
                 </div>
                 <p className="max-w-xs text-sm text-slate-400">
                     Building the next generation of changemakers from Federal University Dutse.
@@ -100,7 +100,7 @@ export function Footer() {
       </div>
       <div className="border-t border-slate-800 py-6">
          <div className="container px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-slate-500">&copy; 2026 Hult Prize FUDU. All rights reserved.</p>
+            <p className="text-sm text-slate-500">&copy; 2026 Hult Prize FUD. All rights reserved.</p>
             <div className="flex items-center gap-4">
                 <Link href="#" className="text-slate-500 hover:text-white transition-colors">
                     <Twitter className="h-5 w-5" />

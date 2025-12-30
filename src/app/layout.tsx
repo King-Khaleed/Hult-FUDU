@@ -3,8 +3,8 @@ import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'FUDU Hult Hub',
-  description: 'Join the Hult Prize FUDU 2026 competition and change the world.',
+  title: 'FUD Hult Hub',
+  description: 'Join the Hult Prize FUD 2026 competition and change the world.',
 };
 
 export default function RootLayout({

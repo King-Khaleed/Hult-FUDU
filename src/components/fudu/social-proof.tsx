@@ -22,7 +22,7 @@ const testimonials = [
     id: "testimonial-avatar-3",
     name: "Alex Ray",
     program: "Campus Winner 2025",
-    quote: "The mentorship and support from the FUDU Hult Hub were invaluable. We learned so much about entrepreneurship in just a few months.",
+    quote: "The mentorship and support from the FUD Hult Hub were invaluable. We learned so much about entrepreneurship in just a few months.",
   },
 ];
 
@@ -37,7 +37,7 @@ export function SocialProof() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">From Our Community</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Hear from past participants and see the success stories that started right here at FUDU.
+                Hear from past participants and see the success stories that started right here at FUD.
               </p>
             </div>
           </div>

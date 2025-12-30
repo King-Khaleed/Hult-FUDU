@@ -27,7 +27,7 @@ export function JoinCommunity() {
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Don't Miss Out on Updates</h2>
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Join 300+ FUDU students in our WhatsApp community for real-time updates, resources, and support.
+              Join 300+ FUD students in our WhatsApp community for real-time updates, resources, and support.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 text-left mt-8">
